@@ -2,7 +2,7 @@ image: python:3.9
 
 variables:
   QUARTO_VERSION: 0.3.18
-  BASENAME: test # name of main .qmd file
+  BASENAME: 2022-teknologi-belajar # name of main .qmd file
 
 before_script:
   - python -V  # Print out python version for debugging
