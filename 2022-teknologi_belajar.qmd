@@ -1,0 +1,180 @@
+---
+title: "Menggunakan Teknologi untuk Belajar"
+author: "Mohammad Rizki - 2023<br><br>"
+bibliography: /Users/mohammadrizki/Documents/perpustakaan.bib
+format: 
+  revealjs:
+    incremental: true
+    footer: "[mohammadrizki.com](https://mohammadrizki.com)&nbsp;&nbsp;&nbsp;"
+    theme: [serif, solarized]
+    preview-links: auto
+    chalkboard: 
+      boardmarker-width: 5
+  beamer:
+    incremental: false
+    aspectratio: 169
+    navigation: horizontal
+    theme: Warsaw
+    colortheme: wolverine
+#    fontfamily: libertinus
+#from: markdown+emoji
+#execute:
+# echo: true
+#editor: 
+#  markdown: 
+#    wrap: 72
+---
+
+# Pendahuluan
+
+1.  Mengapa perlu teknologi?
+2.  Topik presentasi
+3.  Pikirkan
+4.  Rencana tindak lanjut
+
+------------------------------------------------------------------------
+
+## Mengapa perlu teknologi?
+
+1.  Apakah peran teknologi dalam kehidupan kita sehari-hari?
+2.  Apakah contoh teknologi yang telah Anda gunakan?
+3.  Mengapa Anda menggunakannya?
+4.  Apakah Anda sudah menggunakan teknologi untuk membantu belajar?
+5.  Apakah teknologi yang Anda gunakan?
+
+------------------------------------------------------------------------
+
+## Contoh Teknologi
+
+1.  Apakah Anda menggunakan gadget?
+2.  Bila jawaban Anda "Ya" untuk nomor satu, silakan isi survei di [bit.ly/gadgetsaya](https://bit.ly/gadgetsaya)
+
+------------------------------------------------------------------------
+
+## Teknologi
+
+Teknologi dapat membantu kita belajar lebih efisien, misalnya penggunaan virtual reality untuk belajar komunikasi [@Shorey:2020uj]
+
+Banyak tool yang ([**free**]{style="#cc0000"}!), termasuk menyimpan catatan tentang *cyanide poisoning* [@tshala-katumbay2016]
+
+------------------------------------------------------------------------
+
+# Topik Presentasi
+
+1.  Menjadwal
+2.  Mencari informasi
+3.  Menyimpan
+4.  Mencatat
+5.  Menulis
+6.  Analisis
+7.  Kolaborasi
+
+------------------------------------------------------------------------
+
+# Menjadwal
+
+-   Mengatur agenda
+-   Banyak kegiatan dapat kita atur waktunya di agenda elektronik
+-   Contohnya: Google Calendar
+-   Jadwal tersimpan di internet
+-   Dapat [**mengingatkan**]{style="color:#cc0000"} kita *atau* orang lain di mana saja
+-   Dapat diakses di semua gadget
+
+------------------------------------------------------------------------
+
+# Mencari Informasi
+
+-   Mencari literatur ilmiah maupun non-ilmiah
+-   Google (khususnya [*Google Scholar*](https://scholar.google.com "Google Scholar")), [PubMed](https://pubmed.ncbi.nlm.gov)
+-   Perlu strategi pencarian informasi yang efisien
+-   Mencari literatur ilmiah dan kaitannya dengan literatur lain
+-   Coba gunakan [Research Rabbit](https://researchrabbit.ai) atau [World Wide Science](https://worldwidescience.org)
+
+------------------------------------------------------------------------
+
+# Menyimpan
+
+-   Teknologi dapat kita menyimpan di *cloud* (contoh [Google Drive](https://drive.google.com), [Dropbox](https://www.dropbox.com), [OneDrive](https://onedrive.live.com))
+-   Menyimpan pustaka secara sistematis dan mudah digunakan untuk naskah ilmiah
+-   Pernah mencoba [Mendeley](https://www.mendeley.com) atau [Zotero](https://www.zotero.org)?
+
+------------------------------------------------------------------------
+
+# Mencatat
+
+-   Teknologi dapat kita mencatat di *cloud* (contoh [Google Docs](https://docs.google.com), [Google Sheet](https://sheets.google.com), [Google Slides](https://slides.google.com), [Overleaf](https://www.overleaf.com))
+
+------------------------------------------------------------------------
+
+# Menulis
+
+-   [Overleaf](https://www.overleaf.com) siap untuk sekaligus mempersiapkan naskah ilmiah, termasuk KTI/skripsi, namun harus *online*
+-   Kalau hendak menulis ilmiah *offline*, ada *tool* yang dapat dicoba
+-   [RStudio](https://www.rstudio.com) (memerlukan instalasi [R](https://www.r-project.org)) dapat digunakan untuk menulis ilmiah secara *reproducible* (*reproducible report*)
+
+------------------------------------------------------------------------
+
+# Menulis
+
+-   Apa itu *reproducible report*?
+-   Laporan yang memuat pula proses dihasilkannya laporan tersebut beserta data dan langkah yang diperlukan
+-   "*that the data and code are available, and that there's a clear path from data and code to the final report*" ([Broman, 2018](https://kbroman.org/Tools4RR/assets/lectures/03_knitr_Rmd_withnotes.pdf))
+
+------------------------------------------------------------------------
+
+# Analisis
+
+1.  Dengan menggunakan [RStudio](http://www.rstudio.org) kita dapat menuliskan kode analisis dan mendapatkan hasilnya
+2.  Tidak perlu **copy-and-paste**
+3.  Lihat contoh berikut ini
+
+------------------------------------------------------------------------
+
+## Contoh Analisis
+
+Kita melakukan pengukuran titik lebur senyawa x. Dari 125 pengukuran, kita peroleh rerata 28.1, standar deviasi 5.6. Kita tahu bahwa rerata titik lebur senyawa x di literatur adalah 27.9. Kita ingin mengetahui apakah rerata hasil pengukuran kita ini berbeda bermakna secara statistik. Kita lakukan uji One-sample t-test. Dengan RStudio, kita cukup mengetikkan perintah: tsum.test(mean.x=28.1, s.x=5.6, n.x=125, mu=27.9, alternative="greater") dengan menggunakan library BSDA. Hasil akan langsung kita peroleh.
+
+------------------------------------------------------------------------
+
+# Analisis
+
+```{r}
+#| echo: fenced
+library(BSDA)
+tsum.test(mean.x=28.1, s.x=5.6, 
+          n.x=125, mu=27.9, alternative="greater")
+```
+
+------------------------------------------------------------------------
+
+# Kolaborasi
+
+-   [Overleaf](https://www.overleaf.com) bisa untuk berkolaborasi
+
+-   Google Docs, Sheets, dan Slides juga dapat berkolaborasi
+
+-   Tentu saja, WhatsApp dan Telegram
+
+------------------------------------------------------------------------
+
+# Kumpulan Video Menarik
+
+-   [How to Share Google Calendar to Others](https://www.youtube.com/watch?v=Dy9i2KTfmxw)
+-   [Mencari Referensi menggunakan Research Rabbit](https://www.youtube.com/watch?v=8evbEb-eQXw)
+-   [Cara Input Referensi ke Zotero](https://www.youtube.com/watch?v=VN3w4k-NgPw)
+-   [Membuat Catatan dan Menerjemahkan menggunakan Zotero](https://www.youtube.com/watch?v=I_kaecEoJcU)
+-   [Introduction to Overleaf](https://www.youtube.com/watch?v=g8Ejj0T0yG4)
+-   [Reproducible Reports with R Markdown (STAT 545 Episode 3-A)](https://www.youtube.com/watch?v=ZzDSkBgt9xQ)
+
+------------------------------------------------------------------------
+
+# Penutup
+
+-   Sampai jumpa di sesi lainnya
+-   Bila ada yang tertarik belajar menggunakan Zotero dan RStudio, ikuti sesi latihan luring di luar jadwal kuliah ini
+-   Terima kasih
+
+# Daftar Pustaka
+
+::: {#refs}
+:::
