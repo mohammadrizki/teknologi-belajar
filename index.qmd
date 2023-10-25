@@ -11,12 +11,12 @@ format:
     preview-links: auto
     chalkboard: 
       boardmarker-width: 5
-  beamer:
-    incremental: false
-    aspectratio: 169
-    navigation: horizontal
-    theme: Warsaw
-    colortheme: wolverine
+#  beamer:
+#    incremental: false
+#    aspectratio: 169
+#    navigation: horizontal
+#    theme: Warsaw
+#    colortheme: wolverine
 #    fontfamily: libertinus
 #from: markdown+emoji
 #execute:
