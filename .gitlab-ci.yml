@@ -2,7 +2,7 @@ image: python:3.9
 
 variables:
   QUARTO_VERSION: 0.3.18
-  BASENAME: 2022-teknologi-belajar # name of main .qmd file
+  BASENAME: test # name of main .qmd file
 
 before_script:
   - python -V  # Print out python version for debugging
@@ -14,6 +14,7 @@ pages:
     - pip install jupyter
     - quarto check install
     - quarto check jupyter
+    - pip install -r requirements.txt
     - quarto render ${BASENAME}.qmd
     - mkdir public
     - cp ${BASENAME}.html public/index.html
@@ -24,3 +25,4 @@ pages:
       - public
   only:
     - main
+
