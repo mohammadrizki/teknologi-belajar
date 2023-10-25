@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  image: registry.gitlab.com/quarto-forge/docker/polyglot
+  script:
+    - Rscript requirements.R
+    - quarto render ./
+    - mv _book public    # gitlab pages should be stored in 'public' directory
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
