@@ -2,9 +2,9 @@
 title: "Menggunakan Teknologi untuk Belajar"
 author: "Mohammad Rizki - 2023<br><br>"
 bibliography: /Users/mohammadrizki/Documents/perpustakaan.bib
+
 format: 
   revealjs:
-    output-dir: _book
     incremental: true
     footer: "[mohammadrizki.com](https://mohammadrizki.com)&nbsp;&nbsp;&nbsp;"
     theme: [serif, solarized]
